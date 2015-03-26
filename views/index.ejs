@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <p>二维码</p>
+    <img src="/qr" alt="二维码" border="1" />
+    <p>测试数据</p>
+    <form action="/handle" method="get">
+      <input type="text" name="qrId" value="1"/><br/>
+      <input type="text" name="mail" value="xubenling@cyou-inc.com"/><br/>
+      <input type="text" name="name" value="徐本领"/><br/>
+      <input type="text" name="department" value="业务服务体系-平台事业部-技术中心-IT研发部"/><br/>
+      <input type="submit" value="OK"/>
+    </form>
+  </body>
+</html>

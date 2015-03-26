@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>查询结果</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>序号</th>
+        <!-- <th>二维码ID</th> -->
+        <th>姓名</th>
+        <th>邮箱</th>
+        <th>部门</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for(var i = 0; i < data.length; i++) { %>
+      <tr>
+        <td><%= i + 1 %></td>
+        <!-- <td><%= data[i].qrId %></td> -->
+        <td><%= data[i].name %></td>
+        <td><%= data[i].mail %></td>
+        <td><%= data[i].department %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+</body>
+</html>
